@@ -1,0 +1,40 @@
+.sudokuGrid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 2px;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .sudokuRow {
+    display: grid;
+  }
+  
+  .sudokuCell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #fff;
+  }
+
+  .sudokuCell:hover {
+    background-color: #4a4848;
+  }
+
+.sudokuCell:nth-child(3),
+.sudokuCell:nth-child(6) {
+  border-bottom: 2.5px solid white;
+  
+}
+
+.sudokuRow:nth-child(4) .sudokuCell,
+.sudokuRow:nth-child(7) .sudokuCell{
+    border-left: 2.5px solid white;
+}
+
+.clearBtn{
+    display: inline;
+    margin-left: 250px;
+    
+}
